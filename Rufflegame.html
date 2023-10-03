@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro SWF Player</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .swf-container {
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: #111;
+            border: 1px solid #fff;
+        }
+
+        object {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retro SWF Player</h1>
+    <div class="swf-container">
+        <!-- Include Ruffle.js -->
+        <script src="ruffle.js"></script>
+	<div class="swf"dir="ltr" style="text-align: left;" trbidi="on">
+        <embed height="480" pluginspage=" http://www.macromedia.com/go/getflashplayer" src="https://returnofflash.github.io/getswf/redshift-5730.swf" type="application/x-shockwave-flash" width="620"></embed>
+	</div>
+
+        <!-- Embed SWF game -->
+      
+            <!-- You can add other parameters here if needed -->
+            <p>Your browser doesn't support Flash. Please use Ruffle.js to play this game.</p>
+        </object>
+    </div>
+</body>
+</html>
